@@ -1,4 +1,5 @@
 function _xcat_tabedit() { 
+    #comment
     local cur=${COMP_WORDS[COMP_CWORD]};
     COMPREPLY=($(compgen -W "`tabdump` -h --help -?" -- $cur))
     return 0
